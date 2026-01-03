@@ -23,7 +23,7 @@ git clone https://github.com/phyuhanthwe/docker-nginx-web-app.git
 cd docker-nginx-web-app
 
 # Build docker image
-sudo docker build -t my-nginx .
+sudo docker build -t custom-nginx .
 
 # Pull the Nginx image and runs it on Port 80
-sudo docker run -d -p 80:80 --name my-web-server my-nginx
+sudo docker run -d -p 80:80 --name my-web-server custom-nginx

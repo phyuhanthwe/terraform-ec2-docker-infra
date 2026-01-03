@@ -13,6 +13,6 @@ resource "aws_instance" "demo_server" {
   user_data = file("${path.module}/../scripts/install-docker.sh")
 
   tags = {
-    Name = "${var.prefix}-demo-instance"
+    Name = "${var.prefix}-instance"
   }
 }
